@@ -59,6 +59,8 @@ npm install --save-dev flow-bin babel-preset-flow
 
 Then copy to your workspace the .babelrc , .eslintrc and .flowconfig
 
+If you're using react-native don't use flowtype on the plugins of .eslintrc
+
 ## How to use flow
 
 Add // @flow to any files you want to type check (for example, to src/App.js).

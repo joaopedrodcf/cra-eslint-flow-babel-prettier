@@ -19,6 +19,7 @@
     "flow coverage": "flow coverage",
     "lint": "eslint src"
   },
+  
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-preset-flow": "^6.23.0",
