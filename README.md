@@ -4,25 +4,25 @@ A project with CRA already configurated with eslint, flow, babel and prettier
 
 ## Getting Started
 
-This project assumes that you use vscode
-
-You also need npm version 5+
-
-```
-npm -v
-```
+This project assumes that you use VSCODE
 
 And is based on some tutorials from the web like this one , shot out to Sean Froff for is awesome tutorial
 https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213
 
-first update your user settings
+First update your user settings (CTRL + ,)
 
 ```
 "editor.formatOnSave": true,
-"javascript.format.enable": false,
-"javascript.validate.enable": false,
-"prettier.eslintIntegration": true
+"eslint.autoFixOnSave": true,
+"eslint.alwaysShowStatus": true,
 ```
+
+Install the following extension on VSCODE:
+
+* [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Install yarn (Faster then NPM)
+* [yarn](https://yarnpkg.com/en/)
 
 ## Using same project
 
@@ -33,32 +33,27 @@ To prevent an error from flow extension
 npm i flow-bin --global
 ```
 
-```
-npm install csscomb -g
-```
-
-Then add this extensions to your setup
-https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode
-https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring
-
 ## Using other project
+
 
 ```
 npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 ```
-npm install babel-eslint --save-dev
+yarn add prettier --dev --exact
 ```
 
 ```
-npm install prettier-eslint --save-dev
+yarn add husky lint-staged --dev
 ```
 
 ```
-npm install --save-dev flow-bin babel-preset-flow
+yarn add flow-bin babel-preset-flow --dev
+```
+
+```
+yarn add babel-eslint eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 Then copy to your workspace the .babelrc , .eslintrc and .flowconfig
@@ -81,3 +76,20 @@ npm run flow  start
 ```
 
 You should see errors in your vscode
+
+## my project setup
+
+* [babel](https://github.com/babel/babel) - 🐠 Babel is a compiler for writing next generation JavaScript.
+* [babel-eslint](https://github.com/babel/babel-eslint) - 🗼 A wrapper for Babel's parser used for ESLint
+* [eslint](https://github.com/eslint/eslint) - A fully pluggable tool for identifying and reporting on patterns in JavaScript
+* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - Turns off all rules that are unnecessary or might conflict with Prettier. 
+* [eslint-plugin-flowtype](https://github.com/gajus/eslint-plugin-flowtype)- Flow type linting rules for ESLint.
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - React specific linting rules for ESLint
+* [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11) - Static AST checker for a11y rules on JSX elements.
+* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - ESLint plugin with rules that help validate proper imports.
+* [flow](https://github.com/facebook/flow) - Adds static typing to JavaScript to improve developer productivity and code quality.
+* [flow-bin](https://github.com/flowtype/flow-bin) - Binary wrapper for Flow - A static type checker for JavaScript
+* [husky](https://github.com/typicode/husky) - 🐶 Git hooks made easy
+* [javascript](https://github.com/airbnb/javascript) - JavaScript Style Guide
+* [lint-staged](https://github.com/okonet/lint-staged) - 🚫💩 — Run linters on git staged files 
+* [prettier](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter.
