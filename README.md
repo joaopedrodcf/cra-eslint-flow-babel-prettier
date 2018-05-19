@@ -33,6 +33,10 @@ To prevent an error from flow extension
 npm i flow-bin --global
 ```
 
+```
+npm install csscomb -g
+```
+
 Then add this extensions to your setup
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
