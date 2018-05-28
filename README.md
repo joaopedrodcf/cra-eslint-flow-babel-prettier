@@ -56,6 +56,10 @@ yarn add flow-bin babel-preset-flow --dev
 yarn add babel-eslint eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
+```
+yarn add --dev stylelint stylelint-processor-styled-components stylelint-config-styled-components stylelint-config-standard
+```
+
 Then copy to your workspace the .babelrc , .eslintrc and .flowconfig
 
 If you're using react-native don't use flowtype on the plugins of .eslintrc
@@ -77,6 +81,24 @@ npm run flow  start
 
 You should see errors in your vscode
 
+## Deploy website to github
+```
+git checkout -b gh-pages
+```
+
+```
+yarn add gh-pages --dev
+```
+
+```
+  "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+```
+
+```
+yarn run deploy
+```
 ## my project setup
 
 * [babel](https://github.com/babel/babel) - 🐠 Babel is a compiler for writing next generation JavaScript.
