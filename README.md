@@ -49,11 +49,11 @@ yarn add husky lint-staged --dev
 ```
 
 ```
-yarn add flow-bin babel-preset-flow --dev
+yarn add babel-eslint eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 ```
-yarn add babel-eslint eslint-config-prettier eslint-plugin-prettier --dev
+yarn add flow-bin babel-preset-flow --dev
 ```
 
 ```
@@ -109,9 +109,16 @@ yarn run deploy
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - React specific linting rules for ESLint
 * [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11) - Static AST checker for a11y rules on JSX elements.
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - ESLint plugin with rules that help validate proper imports.
+* [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) - An ESlint rule plugin companion to babel-eslint
+* [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) - ESLint plugin for prettier formatting
 * [flow](https://github.com/facebook/flow) - Adds static typing to JavaScript to improve developer productivity and code quality.
 * [flow-bin](https://github.com/flowtype/flow-bin) - Binary wrapper for Flow - A static type checker for JavaScript
+* [gh-pages](https://github.com/tschaub/gh-pages) - General purpose task for publishing files to a gh-pages branch on GitHub
 * [husky](https://github.com/typicode/husky) - 🐶 Git hooks made easy
 * [javascript](https://github.com/airbnb/javascript) - JavaScript Style Guide
 * [lint-staged](https://github.com/okonet/lint-staged) - 🚫💩 — Run linters on git staged files 
 * [prettier](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter.
+* [stylelint](https://github.com/stylelint/stylelint) -  A mighty, modern CSS linter
+* [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) - The standard shareable config for stylelint 
+* [stylelint-config-styled-components](https://github.com/styled-components/stylelint-config-styled-components) - The shareable stylelint config for stylelint-processor-styled-components
+* [stylelint-processor-styled-components](https://github.com/styled-components/stylelint-processor-styled-components) - Lint your styled components with stylelint! 
